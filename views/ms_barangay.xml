@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ms_barangay_capaculan_action" model="ir.actions.act_window">
+        <field name="name">Barangay Capaculan</field>
+        <field name="res_model">ms.add.family</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('ms_barangay', '=', 'capaculan')]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create here first.
+            </p> 
+        </field>
+    </record>
+
+
+    <record id="ms_barangay_calumpang_action" model="ir.actions.act_window">
+        <field name="name">Barangay Calumpang</field>
+        <field name="res_model">ms.add.family</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('ms_barangay', '=', 'calumpang')]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create here first.
+            </p> 
+        </field>
+    </record>
+
+    <record id="ms_barangay_poblacion_west_action" model="ir.actions.act_window">
+        <field name="name">Barangay Poblacion West</field>
+        <field name="res_model">ms.add.family</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('ms_barangay', '=', 'poblacion_west')]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create here first.
+            </p> 
+        </field>
+    </record>
+
+</odoo>

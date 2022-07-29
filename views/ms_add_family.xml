@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ms_add_family_view_tree" model="ir.ui.view">
+        <field name="name">ms.add.family.view.tree</field>
+        <field name="model">ms.add.family</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ms_lastname" />               
+                <field name="ms_firstname" />
+                <field name="ms_middlename"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="ms_add_family_view_form" model="ir.ui.view">
+        <field name="name">ms.add.family.view.form</field>
+        <field name="model">ms.add.family</field>
+        <field name="arch" type="xml">
+            <form >
+                <sheet>
+                    <group>
+
+                        <field name="ms_household_name" />
+                        <field name="ms_lastname" />
+                        <field name="ms_firstname" />
+                        <field name="ms_middlename" />
+                        <field name="ms_gender" />
+                        <field name="ms_rel_to_the_head" />
+                        <field name="ms_residence_permanent" />
+                        <field name="ms_barangay"/>
+                        <field name="ms_home_address" />
+                        <field name="ms_num_years_in_the_said_address"/>
+                        <field name="ms_age" />
+                        <field name="ms_birthday"/>
+                        <field name="ms_with_birth_certificate"/>
+                        <field name="ms_beneficiaries" />
+                        <field name="ms_religion"/>
+                        <field name="ms_if_with_specific_type_of_disability" />
+                        <field name="ms_provided_with_eccd_service" />
+                        <field name="ms_if_yes_specify"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
+
+    <record id="ms_add_family_action" model="ir.actions.act_window">
+        <field name="name">Family</field>
+        <field name="res_model">ms.add.family</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create here first.
+            </p> 
+        </field>
+    </record>
+
+
+
+</odoo>

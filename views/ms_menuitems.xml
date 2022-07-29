@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="ms_home_menu"
+        name="Home"
+        sequence="0"/>
+
+    <menuitem
+        id="ms_family_menu"
+        name="Family"
+        action="ms_family_action"
+        parent="ms_home_menu"
+        sequence="0"/>
+
+    <menuitem
+        id="ms_barangay_menu"
+        name="Barangay"
+        parent="ms_home_menu"
+        sequence="2"/>
+
+        <menuitem
+        id="ms_capaculan_menu"
+        name="Capaculan"
+        parent="ms_barangay_menu"
+        action="ms_barangay_capaculan_action"
+        sequence="0"/>
+
+       <menuitem
+        id="ms_calumpang_menu"
+        name="Calumpang"
+        parent="ms_barangay_menu"
+        action="ms_barangay_calumpang_action"
+        sequence="0"/>
+
+        <menuitem
+        id="ms_poblacionwest_menu"
+        name="Poblacion West"
+        parent="ms_barangay_menu"
+        action="ms_barangay_poblacion_west_action"
+        sequence="0"/>
+        
+    <menuitem
+        id="ms_add_family_menu"
+        name="Add Family Member"
+        parent="ms_home_menu"
+        action="ms_add_family_action"
+        sequence="10"/>
+
+</odoo>
